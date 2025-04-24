@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/CssTelaEntrar/CssTelaEntrar.css">
-    <title>Document</title>
+    <title>TelaLogin</title>
 </head>
 <body>
     
-    <h1>tela inical/ login</h1>
+    
+  <div id="conteiner">
+    <!-- Mensagem de erro -->
+    <div id="Erro">
+      <h4>Tente novamente!</h4>
+    </div>
+
+    <!-- Formulário de login -->
+    <form class="form" action="#" method="get">
+      <h1>Entrar</h1>
+
+      <label for="Email">Email:</label>
+      <input type="email" id="Email" name="email" required />
+
+      <label for="Senha">Senha:</label>
+      <input type="password" id="Senha" name="senha" required />
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Ver senha</label>
+      </div>
+
+      <button type="submit" onclick="mostrarErro(event)">Entrar</button>
+    </form>
+  </div>
+
 
     
     <script src="../../JavaScript/JsEntrar/Entrar.js"></script>
