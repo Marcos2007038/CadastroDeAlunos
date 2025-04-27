@@ -8,7 +8,7 @@ public class ConfigDB {
 	
 	/*Configuração para não ficar fazendo isso em outras parte do código.*/
 	public static Connection DadosDB() {
-		String url = "jdbc:mysql://localhost:3306/projeto_financeiro";
+		String url = "jdbc:mysql://localhost:3306/cadastrar_alunos";
 		String usuario = "root";
 		String senha = "";
 		try {
